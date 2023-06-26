@@ -25,7 +25,7 @@ function _drawListItems() {
 function _drawActiveItem() {
     let template;
     if (AppState.activeNote === null) {
-        template = /*html*/`<p class="fs-3 p-3">Create a new note${!AppState.notes.length ? '.' : ' or select one from the list.'}</p>`
+        template = /*html*/`<p class="fs-3 p-3">Create a new JOT${!AppState.notes.length ? ' to get started.' : ' or select one from the list.'}</p>`
     }
     else {
         template = AppState.activeNote.ActiveItemHTML
